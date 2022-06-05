@@ -13,6 +13,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body onload="toggle(),create_unfinished_task()">
@@ -201,6 +203,71 @@
         </div>
     </div> 
 
+    <div class="amplop" style="margin-top: 45px;">
+        <div class="amplop-title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">Gallery Photo</div>
+    </div>  
+    <div class="gallery-photo"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">
+        <div style="--swiper-navigation-color: rgb(231, 184, 44); --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/1.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/2.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/3.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/4.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/5.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/6.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/7.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/8.JPG">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/1.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/2.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/3.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/4.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/5.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/6.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/7.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/galerry/8.JPG">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="arrum-section">
         <!-- <div class="cover-top">
             <img src="asset/image/arrum-top.png" alt="">
@@ -318,14 +385,14 @@
         <div class="cover-bottom">
             <img src="asset/image/ornamen-bottom.png" alt="">
         </div>
-    </div>
+    </div> -->
 
 
     
 
 
    
-<!-- 
+
     <div class="wish-img" data-aos="fade-up" data-aos-duration="3000">
         <img src="asset/image/wish.png" alt="">
     </div>
@@ -366,7 +433,7 @@
         <div class="cover-bottom">
             <img src="asset/image/ornamen-bottom.png" alt="">
         </div>
-    </div> -->
+    </div>
     
     <div class="loader-wrapper">
         <div id="heart"></div>
@@ -376,94 +443,34 @@
 
     <script data-cfasync="false" src="js/script.js" type="text/javascript"></script>
     
-    <!-- <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyC68lq4VmuVUWnlF9yNLIkHlcD6_nkkYC8",
-          authDomain: "Yunita-5d4d2.firebaseapp.com",
-          databaseURL: "https://Yunita-5d4d2-default-rtdb.asia-southeast1.firebasedatabase.app",
-          projectId: "Yunita-5d4d2",
-          storageBucket: "Yunita-5d4d2.appspot.com",
-          messagingSenderId: "12465832066",
-          appId: "1:12465832066:web:eb9161ce91e0d238c4b49b"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        
-        function add_task(){
-            input_box = document.getElementById("message");
-            input_date = document.getElementById("name");
-        
-            if(input_box.value.length != 0 && input_date.value.length != 0){
-            // our boxes have data and we take database
-            var key = app.database().ref().child("comments").push().key;
-            var task = {
-                ucapan: input_box.value,
-                nama: input_date.value,
-                key: key
-            };
-        
-            var updates = {};
-            updates["/comments/" + key] = task;
-            app.database().ref().update(updates);
-            create_unfinished_task();
-            swal("Pesan telah terkirim", "Silakan cek pesan anda di kolom yang sudah ada", "success");
-            input_box.value='';
-            input_date.value='';
-            }
-        }
-
-
-        function create_unfinished_task(){
-            unfinished_task_container = document.getElementsByClassName("container1")[0];
-            unfinished_task_container.innerHTML = "";
-        
-            task_array = [];
-            app.database().ref("comments").once('value', function(snapshot) {
-            snapshot.forEach(function(childSnapshot) {
-                var childKey = childSnapshot.key;
-                var childData = childSnapshot.val();
-                task_array.push(Object.values(childData));
-            });
-            for(var i, i = 0; i < task_array.length; i++){
-                task_nama = task_array[i][1];
-                task_key = task_array[i][0];
-                task_ucapan = task_array[i][2];  
-        
-                task_container = document.createElement("div");
-                task_container.setAttribute("class", "task_container");
-                task_container.setAttribute("data-key", task_key);
-        
-                // TASK DATA  
-                task_data = document.createElement('div');
-                task_data.setAttribute('id', 'task_data');
-        
-                ucapan = document.createElement('p');
-                ucapan.setAttribute('id', 'task_ucapan');
-                ucapan.innerHTML = task_ucapan;
-        
-                nama = document.createElement('p');
-                nama.setAttribute('id', 'task_nama');
-                nama.innerHTML = "-" + task_nama + "-";
-
-
-        
-                unfinished_task_container.append(task_container);
-                task_container.append(task_data);
-                task_data.append(ucapan);
-                task_data.append(nama);
-            }
-        
-            });
-            
-        }
-      </script> -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+          loop: true,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        });
+    </script>
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzwM7bBknuLBttLrf70xyMRMLtV9Z2YnrjRQ2zYemehq6qDcEhEHk7VVrYER2O59_WZ3Q/exec'

@@ -111,7 +111,7 @@ body{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: black; 
+    background: #fcc883; 
     border-radius: 10px;
   }
 
@@ -896,7 +896,7 @@ font-size: 40px;
 }
 
 .date p{
-  color: black;
+  color: #fcc883;
   font-size: 15px !important;
   font-weight: bolder;
 }
@@ -989,7 +989,7 @@ font-size: 40px;
 .kediaman span{
   font-family: 'qalistha';
   font-size: 22px;
-  color: black;
+  color: #fcc883;
   font-weight: bolder;
   z-index: 100;
 }
@@ -1005,7 +1005,7 @@ font-size: 40px;
 }
 
 .waktu .sabtu p{
-  color: black;
+  color: #fcc883;
   font-size: 60px !important;
   padding: 0 !important;
   line-height: 100px;
@@ -1182,7 +1182,7 @@ input[type="radio"] {
     height: 18px;
     border: 1px solid #fcc883;
     border-radius: 100%;
-    background: black;
+    background: #fcc883;
 }
 
 [type="radio"]:checked + label:after,
@@ -1372,13 +1372,14 @@ input[type="radio"] {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 20px;
   width: 100vw;
   height: 100px;
 }
 
 .wish-img img{
-  width: 180px;
-  height: 60px;
+  width: 120px;
+  height: 90px;
 }
 
 .contact-us{ 
@@ -1398,12 +1399,12 @@ input[type="radio"] {
   font-family: 'christmas';
   letter-spacing: 5px;
   font-weight: lighter;
-  color: black;
+  color: #fcc883;
   margin-top: 100px;
 }
 
 .box p{
-  color: black;
+  color: #fcc883;
   text-align: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   padding: 0 20px 10px 20px;
@@ -1413,17 +1414,17 @@ input[type="radio"] {
   width: 100%;
   height: 40px;
   background: transparent;
-  border: black 1px solid ;
+  border: #fcc883 1px solid ;
   font-size: 20px;
   font-family: 'Redressed', cursive;
   margin-bottom: 20px;
   cursor: pointer;
-  color: black;
+  color: #fcc883;
 }
 
 .box button:hover{
-  background: black ;
-  color: black;
+  background: #fcc883 ;
+  color: #fcc883;
   transition: .5s;
 }
 
@@ -1436,13 +1437,13 @@ input[type="radio"] {
   margin-top: 100px;
   font-size: 20px;
   font-family: 'Mitr', sans-serif;
-  color: black;
+  color: #fcc883;
 }
 
 .thankyou h5{
   text-align: center;
   font-family: 'amalfi';
-  color: black;
+  color: #fcc883;
   font-size: 25px !important;
   font-weight: lighter;
   margin-top: 20px;
@@ -1457,8 +1458,8 @@ input[type="radio"] {
   width: 100%;
   height: 100px;
   background: transparent;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #fcc883;
+  color: #fcc883;
   font-family: 'Josefin Sans',sans-serif;
 }
 
@@ -1467,7 +1468,7 @@ input[type="radio"] {
 #nama::-webkit-input-placeholder,
 #alamat::-webkit-input-placeholder,
 #kehadiran::-webkit-input-placeholder{
-  color: black;
+  color: #fcc883;
 }
 
 .contact-us form #message{
@@ -1476,7 +1477,7 @@ input[type="radio"] {
 
 .contact-us form input:focus,
 .contact-us form #message:focus{
-  outline-color: black;
+  outline-color: #fcc883;
 }
 .contact-us form input{
   height: 35px;
@@ -1488,7 +1489,7 @@ input[type="radio"] {
 #input_button{
   height: 40px;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #fcc883;
   background: transparent;
   font-size: 1.0625rem;
   font-weight: 500;
@@ -1499,8 +1500,8 @@ input[type="radio"] {
 }
 
 #input_button:hover{
-  background-color: black;
-  color:black;
+  background-color: #fcc883;
+  color:#fcc883;
 }
 
 #input_button:active{
@@ -1528,7 +1529,7 @@ input[type="radio"] {
 }
 
 .task_container:hover{
-  background-color: black;
+  background-color: #fcc883;
 }
 
 #task_data{
@@ -1544,7 +1545,7 @@ input[type="radio"] {
   width:100%;
   text-align: left;
   padding: 0;
-  color: black;
+  color: #fcc883;
 }
 
 #task_ucapan p{
@@ -1558,7 +1559,7 @@ input[type="radio"] {
   font-size:15px;
   font-weight: bold;
   padding-top: 5px;
-  color: black;
+  color: #fcc883;
 }
 
 .footer{
@@ -1584,18 +1585,121 @@ input[type="radio"] {
 }
 
 .footer p{
-  color: black;
+  color: #fcc883;
   z-index: 100;
 }
 
 .footer a{
-  color: black;
+  color: #fcc883;
   text-decoration: none;
   z-index: 100;
 }
 
 
-/* @media(max-width: 576px){
+/* swipper gallery photo*/
+.gallery-photo{
+  position: relative;
+  height: 100%;
+}
+
+.gallery-photo {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 20px;
+  padding: 0;
+}
+
+.swiper {
+  width: max-content;
+  height: max-content;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-photo {
+  background: transparent;
+  color: #000;
+  margin-top: -5;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3a005;
+  width: auto;
+  height: max-content;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ @media(max-width: 576px){
  
   /* #popup{
     background: url("../asset/image/sampul.jpg");
@@ -1735,7 +1839,7 @@ input[type="radio"] {
     line-height: 20px;
     padding: 0 10px;
   }
-
+  */
   .contact-us{
     padding: 30px;
   }
@@ -1771,7 +1875,7 @@ input[type="radio"] {
 
   body{
       overflow-x: hidden;
-      background-color: white !important;
+
   }
 
   #task_data{
@@ -1795,4 +1899,4 @@ input[type="radio"] {
       padding: 50px 0 40px 0;
   }
 
-} */
+} 
