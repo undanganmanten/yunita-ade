@@ -362,7 +362,7 @@ img{
 .content-top h2{
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 17px;
   color: #fcc883;
   z-index: 1;
 }
@@ -378,7 +378,7 @@ img{
 .content-top h4{
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 17px;
   color: #fcc883;
 }
 
@@ -428,7 +428,7 @@ img{
 .detail-abs p{
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 17px;
   color: #fcc883;
   margin: 10px;
 }
@@ -842,7 +842,7 @@ font-size: 40px;
   opacity: 1;
   transition: 1s;
   color: #fcc883;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'shafron';
 }
 
@@ -1126,7 +1126,7 @@ font-size: 40px;
   line-height: 20px;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .form-rsvp{
@@ -1275,7 +1275,7 @@ input[type="radio"] {
   border-radius: 5px;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .btn-rek:hover{
