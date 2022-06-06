@@ -927,10 +927,10 @@ font-size: 40px;
 
 .date .save-date .tanggal{
   font-family: 'century' !important;
-  font-size: 35px !important;
+  font-size: 33px !important;
   color: #fcc883;
   font-weight: lighter;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   text-align: left;
   margin: 10px;
 }
