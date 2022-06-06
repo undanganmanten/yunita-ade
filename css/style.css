@@ -1182,7 +1182,7 @@ input[type="radio"] {
     height: 18px;
     border: 1px solid #fcc883;
     border-radius: 100%;
-    background: #fcc883;
+    background: black;
 }
 
 [type="radio"]:checked + label:after,
