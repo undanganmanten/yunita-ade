@@ -1481,7 +1481,8 @@ input[type="radio"] {
   background: transparent;
   border: 1px solid #fcc883;
   color: #fcc883;
-  font-family: 'Josefin Sans',sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
 }
 
 #name::-webkit-input-placeholder,
@@ -1517,11 +1518,12 @@ input[type="radio"] {
   cursor: pointer;
   transition: .3s;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
 }
 
 #input_button:hover{
-  background-color: #fcc883;
+  background-color: #4d4d4d;
   color:#fcc883;
 }
 
