@@ -659,7 +659,7 @@ img{
 .content-isra p{
   color: #fcc883;
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 25px;
 }
 
@@ -904,7 +904,7 @@ font-size: 40px;
 
 .save-date{
   position: absolute;
-  top: 160px;
+  top: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
