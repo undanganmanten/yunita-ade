@@ -253,7 +253,6 @@ body{
 
 .title{
   /* padding-top: 50px; */
-  /* top: 330px; */
   bottom: 100px;
   position: absolute;
   text-align: center;
@@ -431,6 +430,12 @@ img{
   font-size: 17px;
   color: #fcc883;
   margin: 10px;
+}
+
+.detail-abs1 .pengantin-profpic,
+.detail-abs .pengantin-profpic{
+  width:150px;
+  height: auto;
 }
 
 .detail-abs1 .nama,
@@ -946,7 +951,7 @@ font-size: 40px;
   color: #fcc883;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-  font-size: 20px!important;
+  font-size: 17px!important;
 }
 
 .sparator-akad-resepsi{
@@ -1023,7 +1028,7 @@ font-size: 40px;
 }
 
 .kediaman p{
-  font-size: 20px !important;
+  font-size: 17px !important;
   font-family: 'Playfair Display', serif;
   line-height: 20px;
   color: #fcc883;
@@ -1140,7 +1145,7 @@ font-size: 40px;
   background: transparent;
   border: 1px solid #fcc883;
   color: #fcc883;
-  font-family: 'Josefin Sans',sans-serif;
+  font-family: 'Playfair Display', serif;
   margin-top: 10px;
 }
 
@@ -1148,6 +1153,15 @@ font-size: 40px;
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.hadir-confirm p label{
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: lighter;
 }
 
 input[type="radio"] {
@@ -1258,7 +1272,7 @@ input[type="radio"] {
   color: #fcc883;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   padding: 0px 30px;
   margin-bottom: 20px;
@@ -1407,10 +1421,9 @@ input[type="radio"] {
 }
 
 .box p{
+  color: #fcc883;
   text-align: center;
   padding: 0 20px 10px 20px;
-  color: #fcc883;
-  z-index: 100;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
   font-size: 17px;
@@ -1422,10 +1435,11 @@ input[type="radio"] {
   background: transparent;
   border: #fcc883 1px solid ;
   font-size: 20px;
-  font-family: 'Redressed', cursive;
   margin-bottom: 20px;
   cursor: pointer;
   color: #fcc883;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
 }
 
 .box button:hover{
@@ -1443,7 +1457,6 @@ input[type="radio"] {
   margin-top: 100px;
   font-size: 20px;
   color: #fcc883;
-  z-index: 100;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
 }
@@ -1600,8 +1613,8 @@ input[type="radio"] {
 }
 
 .footer a{
-  text-decoration: none;
   color: #fcc883;
+  text-decoration: none;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
   font-size: 17px;
