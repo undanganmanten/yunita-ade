@@ -253,7 +253,8 @@ body{
 
 .title{
   /* padding-top: 50px; */
-  top: 330px;
+  /* top: 330px; */
+  bottom: 150px;
   position: absolute;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
