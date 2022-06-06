@@ -1443,7 +1443,7 @@ input[type="radio"] {
 }
 
 .box button:hover{
-  background: #fcc883 ;
+  background: #4d4d4d ;
   color: #fcc883;
   transition: .5s;
 }
