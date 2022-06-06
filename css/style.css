@@ -1266,18 +1266,20 @@ input[type="radio"] {
 .trigger,.btn-rek{
   text-align: center;
   padding: 7px 13px;
-  background: #3e3e3e;
-  color: #fff;
+  background: transparent;
+  color: #fcc883;
   font-size: 15px;
   outline: none;
-  border: none;
+  border: solid 1px #fcc883;
   border-radius: 5px;
-  font-family: cursive;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+  font-size: 20px;
 }
 
 .btn-rek:hover{
-  color: #3e3e3e;
-  background: #fff;
+  color: #fcc883;
+  background: #454545;
 }
 
 .modal {
